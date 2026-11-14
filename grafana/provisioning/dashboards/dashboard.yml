@@ -10,9 +10,9 @@ providers:
     options:
       path: /etc/grafana/provisioning/dashboards
 
-  - name: 'custom'
+  - name: 'zayanimal'
     orgId: 1
-    folder: 'Custom'
+    folder: ''
     type: file
     disableDeletion: false
     updateIntervalSeconds: 10

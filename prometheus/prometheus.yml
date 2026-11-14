@@ -19,8 +19,9 @@ scrape_configs:
       - targets: ['node-exporter:9100']
 
   - job_name: 'temperature-exporter'
+    metrics_path: '/actuator/prometheus'
     static_configs:
-      - targets: ['temperature-exporter:1099']
+      - targets: ['temperature-exporter:8080']
 
   - job_name: 'mktxp'
     static_configs:
